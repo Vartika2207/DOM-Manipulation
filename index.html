@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="tab tab-1">
+            <table id="table" border="1">
+                <tr>
+                    <th>First Name</th>
+                    <th>Profile</th>
+                    <th>Age</th>
+                </tr>
+            </table>
+        </div>
+        <div class="tab tab-2">
+            <span>First Name : </span><input type="text" name="fname" id="fname">
+            <span>Profile : </span><input type="text" name="Profile" id="Profile">
+            <span>Age : </span><input type="number" name="age" id="age">
+
+            <button onclick="addHTMLTableRow()">Add</button>
+            <button onclick="editHTMLTableSelctedRow()">Edit</button>
+            <button onclick="removeSelectedRow()">Delete</button>
+            <button onclick="chnageCSS()">Try color1</button>
+            <button onclick="chnageCSSToBlue()">Try color2</button>
+            <button  onclick="setDefault()">Reset</button>
+        </div>
+    </div>
+</body>
+</html>
